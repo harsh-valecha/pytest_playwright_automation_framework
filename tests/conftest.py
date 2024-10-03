@@ -46,3 +46,4 @@ def pytest_runtest_makereport(item, call):
         page = item.funcargs.get("page")
         screenshot_path = f"screenshots/failure_screenshots/{item.name}.png"
         page.screenshot(path=screenshot_path)
+#
